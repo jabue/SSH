@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- Struts 2 的Action必须放在包空间下 -->
+	<package name="userthings" extends="struts-default">
+		<!-- 定义action的名字以及action的实现类 -->
+		<action name="login" class="LoginAction">
+			<!-- 定义action的处理结果result,result有两个属性，其中name指定返回名称，tyle指定返回的类型 -->
+			<!-- 处理Login错误时返回/error.jsp -->
+			<result name="error">/loginerror.jsp</result>
+			<!-- 处理Lognin正确时/suc.jsp -->
+			<result name="success">/loginsuccess.jsp</result>
+		</action>
+	</package>
+</struts>    
