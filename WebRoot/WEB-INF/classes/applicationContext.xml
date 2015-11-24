@@ -34,7 +34,7 @@
 		<property name="mappingResources">
 			<list>
 				<value>com/jabue/hibernate/bean/User.hbm.xml</value>
-			</list>
+				<value>com/jabue/hibernate/bean/School.hbm.xml</value></list>
 		</property>
 	</bean>
 

@@ -10,6 +10,9 @@
             <column name="username" length="50" />
             <generator class="assigned" />
         </id>
+        <many-to-one name="school" class="com.jabue.hibernate.bean.School" fetch="select">
+            <column name="school" length="50" not-null="true" />
+        </many-to-one>
         <property name="password" type="java.lang.String">
             <column name="password" length="50" not-null="true" />
         </property>
